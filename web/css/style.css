@@ -108,6 +108,10 @@ img {
   color: #ffffff;
 }
 
+.header_menu ul li a.menu_ativo {
+  color:#ffffff;
+}
+
 /* INTRODUÇÃO */
 
 .introducao {
@@ -279,9 +283,10 @@ img {
 .qualidade img {
   margin: 0px auto;
 }
-
+ 
 .qualidade_lista {
   padding-top: 40px;
+  overflow: auto;
 }
 
 .qualidade_lista li {
