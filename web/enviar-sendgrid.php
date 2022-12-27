@@ -1,6 +1,6 @@
 <?php
 
-require("D:\Faculdade_Cursos\Origamid\Exercicios\Estudo\bikcraft 1.0\bikcraft-1.0\web\sendgrid-php\sendgrid-php.php");
+require("./sendgrid-php/sendgrid-php.php");
 
 $email_site = "myllemetzker17@gmail.com";
 $nome_site = "Bikcraft";
