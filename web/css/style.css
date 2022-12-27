@@ -386,6 +386,14 @@ img {
 	padding: 20px 0;
 }
 
+#form-sucesso {
+	color: #31aa39;
+}
+
+#form-erro {
+	color: #f64540;
+}
+
 /* JavaScript */
 .js [data-slide] {
   position: relative;
@@ -422,4 +430,22 @@ img {
 }
 .js [data-slide-nav] > button.active {
   background: #fec454;
+}
+
+.js [data-anime] {
+	opacity: 0;
+}
+
+.js .fadeInDown {
+	transform: translate3d(0, -20px, 0);
+}
+
+.js .fadeInRight {
+	transform: translate3d(20px, 0, 0);
+   }
+
+.js .anime {
+	opacity: 1;
+	transform: none;
+	transition: opacity 800ms, transform 800ms;
 }

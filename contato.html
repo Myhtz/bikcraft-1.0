@@ -38,8 +38,8 @@
   <!-- INTRODUÇÃO -->
   <section class="introducao-interna interna_contato">
     <div class="container">
-      <h1>Contato</h1>
-      <p>Tire suas dúvidas com a gente</p>
+      <h1 class="fadeInDown" data-anime="400">Contato</h1>
+      <p class="fadeInDown" data-anime="800">Tire suas dúvidas com a gente</p>
     </div>
 
   </section>
@@ -47,18 +47,18 @@
   <!-- Orçamento -->
 
   <section class="contato container">
-    <form id="form_orcamento" action="" class="contato_form grid-8">
+    <form id="form_orcamento" method="POST" action="../bikcraft-1.0/web/enviar-sendgrid.php" class="contato_form grid-8 fadeInDown formphp" data-anime="1200">
       <label for="nome">Nome</label>
-      <input type="text" id="nome">
+      <input type="text" id="nome" name="nome" required>
       <label for="email">E-mail</label>
-      <input type="text" id="email">
+      <input type="email" id="email" name="email" required>
       <label for="telefone">Telefone</label>
       <input type="text" id="telefone">
-      <label for="espec">Especificações</label>
-      <textarea id="espec"></textarea>
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
       <button type="submit" class="btn btn-preto">Enviar</button>
     </form>
-    <div class="contato_dados grid-8">
+    <div class="contato_dados grid-8 fadeInDown" data-anime="1200">
       <h3>Dados</h3>
       <span>+55 11 92031-0394</span>
       <span>orcamento@bikcraft.com</span>
@@ -74,7 +74,7 @@
   </section>
 
   <!-- mapa -->
-  <section class="container contato-mapa">
+  <section class="container contato-mapa" data-anime="1600">
     <a href="https://google.com" target="_blank" class="grid-16"><img src="./web/img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
   </section>
 <!-- /mapa -->
@@ -123,6 +123,10 @@
     </div>
   </footer>
   <!-- /FOOTER -->
+
+  <script src="./web/js/simple-anime.js"></script>
+  <script src="./web/js/simple-form.js"></script>
+  <script src="./web/js/script.js"></script>
 
 </body>
 
