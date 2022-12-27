@@ -2,7 +2,7 @@
 
 require("./sendgrid-php/sendgrid-php.php");
 
-$email_site = "myllemetzker17@gmail.com";
+$email_site = "myh@bikcraft.com";
 $nome_site = "Bikcraft";
 
 $email_user = $_POST["email"];
@@ -25,7 +25,7 @@ $email->setReplyTo($email_user, $nome_user);
 $email->setSubject("Formulário Bikcraft");
 $email->addContent("text/plain", $body_content);
 
-$sendgrid = new \SendGrid("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");
+$sendgrid = new \SendGrid("");
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";
